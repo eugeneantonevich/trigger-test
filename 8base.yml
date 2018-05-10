@@ -1,0 +1,18 @@
+functions:
+  triggerCreateBefore:
+    handler:
+      code: src/triggerCreateBefore.ts
+    type: trigger.before
+    operation: TestFetchTrigger.create
+
+  triggerCreateAfter:
+    handler:
+      code: src/triggerCreateAfter.ts
+    type: trigger.after
+    operation: TestFetchTrigger.create
+
+  mockFunc:
+    handler:
+      code: src/mockFunc.ts
+    type: resolver
+    schema: src/mockFunc.graphql
